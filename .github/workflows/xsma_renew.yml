@@ -44,7 +44,7 @@ jobs:
           XSERVER_GAME_ACCOUNT: ${{ secrets.XSMA_ACCOUNT }}
           GOST_PROXY: ${{ secrets.GOST_PROXY }}
           TG_BOT: ${{ secrets.TG_BOT }}
-          CRON_JOB: ${{ secrets.XSMA_CRON }}
+          CRON_JOB: ${{ secrets.CRON_JOB }}
         run: python3 xserver_game_renew.py
 
       - name: 🧽 清理进程和临时文件
